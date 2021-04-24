@@ -2,6 +2,7 @@
 
 body{
   background: rgb(60, 60, 60);
+  overflow: hidden;
  
 }
 #stay {
@@ -161,14 +162,15 @@ body{
     background: rgb(255, 255, 255);
     border-radius:  100% 100% 50% 40% / 100% 100% 90% 100%;
     top: 30%;
-    left: 110px;
-    
-    overflow: hidden; 
+    right: 10%;
+    /* overflow: hidden;  */
   }
   
   .eye + .eye {
     transform: scaleX(1);
-    left: 10%;
+    right: auto;
+    left: 11%;
+
   }
   
   .pupil {
