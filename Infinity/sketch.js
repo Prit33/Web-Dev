@@ -3,6 +3,9 @@ function setup() {
   angleMode(DEGREES)
 }
 
+function windowResized(){
+  setup();
+}
 function draw() {
   background(30);
   noFill()
