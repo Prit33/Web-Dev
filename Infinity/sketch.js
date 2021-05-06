@@ -28,7 +28,7 @@ function draw() {
       var rad = i * 2;
       var x = rad * cos(j) * 1.5
       var y = rad * sin(j * 2)
-      var z = cos(cos(frameCount * 40 + i * 10) * 100) * 30
+      var z = cos(cos(frameCount * 20 + i * 10) * 100) * 30
 
       vertex(x, y, z)
     }
