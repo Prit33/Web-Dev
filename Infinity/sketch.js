@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1366, 644, WEBGL);
+  createCanvas(windowWidth, windowHeight, WEBGL);
   angleMode(DEGREES)
 }
 
