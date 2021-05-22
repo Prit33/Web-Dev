@@ -154,34 +154,7 @@ body{
     
     /* box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgba(25, 177, 106, 0.75); */
 }
-.random{
-    position: relative;
-    bottom: 25px;
-    height: 130px;
-    width: 25%;
-    border: none;
-    background-color: rgba(63, 63, 63, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 45px;
-    left:15%;
-    
-}
-.random:hover{
-    background-color: rgb(5, 109, 128,0.89);
-    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
-    
-    /* box-shadow: -10px 5px 3px rgba(44, 44, 44, 0.533); */
-}
-.random a{
-    color:#f1f1f1;
-    position:relative;
-    /* letter-spacing: 3px; */
-    font-size: 35px;
-    font-family: Heebo;
-    text-decoration: none;
-    top:30%;
-    left:32%;
-}
+
 .transition{
    
     position: relative;
@@ -211,7 +184,34 @@ body{
     
     /* box-shadow: -10px 5px 3px rgba(44, 44, 44, 0.533); */
 }
-
+.random{
+    position: relative;
+    bottom: 25px;
+    height: 130px;
+    width: 25%;
+    border: none;
+    background-color: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+    left:15%;
+    
+}
+.random:hover{
+    background-color: rgb(5, 109, 128,0.89);
+    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
+    
+    /* box-shadow: -10px 5px 3px rgba(44, 44, 44, 0.533); */
+}
+.random a{
+    color:#f1f1f1;
+    position:relative;
+    /* letter-spacing: 3px; */
+    font-size: 35px;
+    font-family: Heebo;
+    text-decoration: none;
+    top:30%;
+    left:10%;
+}
 .infinity{
     position: relative;
     /* margin: 55px 0px; */
