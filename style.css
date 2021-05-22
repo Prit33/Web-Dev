@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;900&family=Monoton&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow-X: hidden;
+    background: linear-gradient(200deg, rgba(255, 187, 1, 0.932)
+    1%,rgba(255, 0, 128, 0.966) 65%,rgba(110, 1, 252, 0.918) 
+    100%);
+    min-height: 100vh;
+}
+
+
+
+
+.hello {
+    /* content:'  '; */
+    /* overflow: hidden; */
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    /* border-bottom-left-radius: 55px ;
+    border-bottom-right-radius: 55px ; */
+    top:0px;
+    
+    /* padding: 10px 16px; */
+    backdrop-filter: blur(10px);
+    background: rgba(85, 85, 85, 0.5);
+    /* mix-blend-mode:multiply; */
+    color: #f1f1f1;
+    z-index: 50;
+}
+
+
+.hello h1{
+    
+   position: relative;
+   font-family:Heebo;
+    left:10%;
+}
+
+
+.buttons{
+    
+    position:fixed;
+    top: 0;
+    left: 80%;
+    width: 100%;
+
+    display:flex;
+    align-items: center;
+    /* z-index: 10000; */
+} 
+
+.buttons button{
+    
+    background-color:rgb(224, 224, 224,0.5);
+    position: relative;
+    height: 50px;
+    width: 10%;
+    right: auto;
+    margin: 15px;
+    border:none;
+    /* padding:6px 25px; */
+    border-radius: 55px;
+}
+.buttons a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 21px;
+    font-family: Lobster;
+    
+}
+
+.hello:hover{
+    background-color: rgba(44, 44, 44, 0.8);
+    /* box-shadow: -10px 5px 3px rgba(44, 44, 44, 0.533); */
+
+}
+.bluemark{
+
+    top:45%;
+    left:12%; 
+    position:fixed;
+    letter-spacing: 15px;
+    font-size: 50px;
+    color: #ffff;
+    font-family: Monoton;
+    
+    transform: rotate(-28deg)
+}
+
+
+.works{
+    
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.illustration{
+  
+    position: relative;
+    height: 130px;
+    width: 25%;
+    border: none;
+    background-color: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+    left:15%;
+}
+.illustration a{
+    color:#f1f1f1;
+    position:relative;
+    /* letter-spacing: 3px; */
+    font-family: Heebo;
+    font-size: 35px;
+    text-decoration: none;
+    top:30%;
+    left:25%;
+}
+
+.illustration:hover{
+    background:rgb(78, 19, 172,0.8);
+    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
+    
+}
+.parallax {
+    position: relative;
+    left:55%;
+    bottom:130px;
+    /* margin: 55px 5px; */
+    height: 130px;
+    width: 25%;
+    border: none;
+    background-color: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+    /* border-radius: 0% 10% 0% 10%/50% 80% 0% 80% ; */
+}
+.parallax a{
+    color:#f1f1f1;
+    position:relative;
+    font-family: Heebo;
+    font-size: 35px;
+    text-decoration: none;
+    top:10%;
+    left:33%;
+
+}
+.parallax:hover{
+    background-color: rgba(25, 177, 106, 0.836);
+    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
+    
+    /* box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgba(25, 177, 106, 0.75); */
+}
+.scroller{
+    position: relative;
+    bottom: 25px;
+    height: 130px;
+    width: 25%;
+    border: none;
+    background-color: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+    left:15%;
+    
+}
+.scroller:hover{
+    background-color: rgb(5, 109, 128,0.89);
+    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
+    
+    /* box-shadow: -10px 5px 3px rgba(44, 44, 44, 0.533); */
+}
+.scroller a{
+    color:#f1f1f1;
+    position:relative;
+    /* letter-spacing: 3px; */
+    font-size: 35px;
+    font-family: Heebo;
+    text-decoration: none;
+    top:30%;
+    left:32%;
+}
+.transition{
+   
+    position: relative;
+    left:55%;
+    bottom:155px;
+    height: 130px;
+    width: 25%;
+    border: none;
+    background-color: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+}
+.transition a{
+    color:#f1f1f1;
+    position:relative;
+    font-family: Heebo; 
+    /* letter-spacing: 3px; */
+    font-size: 35px;
+    text-decoration: none;
+    top:30%;
+    left:25%;
+}
+
+.transition:hover{
+    background-color: rgba(226, 29, 62, 0.897);
+    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
+    
+    /* box-shadow: -10px 5px 3px rgba(44, 44, 44, 0.533); */
+}
+
+.infinity{
+    position: relative;
+    /* margin: 55px 0px; */
+    bottom: 25px;
+    height: 130px;
+    width: 25%;
+    border: none;
+    background-color: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+    left:15%;
+    /* box-shadow: inset 12px 12px 12px #74e687, inset -12px -50px 50px rgb(190, 56, 56); */
+}
+.infinity:hover{
+    background-color: rgb(61, 61, 61,0.89);
+    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
+    
+    /* box-shadow: -10px 5px 3px rgba(44, 44, 44, 0.533); */
+    
+}
+.infinity a{
+    color:#f1f1f1;
+    position:relative;
+    /* letter-spacing: 3px; */
+    font-family: Heebo;
+    font-size: 35px;
+    text-decoration: none;
+    top:30%;
+    left:35%;
+}
+
+.endless{
+   
+    position: relative;
+    left:55%;
+    bottom:155px;
+    height: 130px;
+    width: 25%;
+    border: none;
+    background-color: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+}
+.endless a{
+    color:#f1f1f1;
+    position:relative;
+    /* letter-spacing: 3px; */
+    font-family: Heebo; 
+    font-size: 35px;
+    text-decoration: none;
+    top:30%;
+    left:34%;
+}
+
+.endless:hover{
+    background-color: rgba(8, 50, 98, 0.836);
+    box-shadow: 14px 14px 30px rgba(39, 39, 39, 0.8), -14px -14px 30px rgb(255, 240, 240, 0.79)
+    
+    /* box-shadow: 14px 14px 30px #2a8ac2, -14px -14px 30px rgb(37, 37, 37); */
+}
