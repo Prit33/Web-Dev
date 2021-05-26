@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: poppins;
+    margin:0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+p {
+  width:50%;
+  height: 50%;
+  font-size: 10px;
+  line-height: 10px;
+  height: 100vh;
+  background: url("Avatar.jpeg") no-repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color:rgba(255,255,255,0);
+  -webkit-text-fill-color:rgba(0, 0, 0, 0) ;
+
+
+}
