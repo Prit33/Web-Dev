@@ -6,7 +6,7 @@ body{
 }
 @font-face{
     font-family:'digital-clock-font';
-    src: url('digital-7.ttf');
+    src: url('digital-7/digital-7.ttf');
 }
 #container{
     width: 100%;
@@ -26,6 +26,7 @@ body{
     position: relative;
     top: 50px;
     border-radius: 55px 55px 25px 25px/ 55px 55px 25px 25px;
+    
     box-shadow:-6px 13px 17px 5px rgb(40 40 40 / 78%);
 }
 
@@ -53,12 +54,16 @@ body{
     color:#e0e0e0;
 }
 #output{
+   
     position: relative;
     top:-20px;
     text-align: right;
     height: 60px;
     margin: 10px 20px;
     font-size: 45px;
+}
+p{
+    overflow: hidden;
 }
 #keyboard{
     height: 400px;
@@ -90,7 +95,6 @@ body{
    
  }
 .number:hover{
-    /* background:linear-gradient(to top,white,grey); */
     
      font-weight:bold;
    
@@ -138,6 +142,6 @@ button:nth-child(18){
 button:nth-child(18):active{
     background-color: #e72c55;
     font-size: 35px;
-    /*  */
+   
    
 }
