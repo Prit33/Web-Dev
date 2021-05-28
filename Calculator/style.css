@@ -6,13 +6,11 @@ body{
 }
 @font-face{
     font-family:'digital-clock-font';
-    src: url('digital-7/digital-7.ttf');
+    src: url('digital-7.ttf');
 }
 #container{
     width: 100%;
     height: 100vh;
-    /* background-image: url("2048x1152_mountains-vector-landscape-nature.png"); */
-    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #afcc71); */
     background: linear-gradient(to right ,#ce4470,#46acce);
     margin: 0px auto  ;
     background-repeat: no-repeat;
@@ -28,7 +26,6 @@ body{
     position: relative;
     top: 50px;
     border-radius: 55px 55px 25px 25px/ 55px 55px 25px 25px;
-    
     box-shadow:-6px 13px 17px 5px rgb(40 40 40 / 78%);
 }
 
