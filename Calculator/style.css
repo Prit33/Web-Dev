@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: black;
+    overflow: hidden;
+}
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7/digital-7.ttf');
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("2048x1152_mountains-vector-landscape-nature.png"); */
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #afcc71); */
+    background: linear-gradient(to right ,#ce4470,#46acce);
+    margin: 0px auto  ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+#calc{
+    width: 320px;
+    height: 535px;
+    background:rgba(61, 61, 61, 0.774);
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    position: relative;
+    top: 50px;
+    border-radius: 55px 55px 25px 25px/ 55px 55px 25px 25px;
+    
+    box-shadow:-6px 13px 17px 5px rgb(40 40 40 / 78%);
+}
+
+#result{
+    height: 120px;
+    font-size: 50px;
+    color: #fafafa;
+    font-family:'digital-clock-font'
+}
+#line{
+    position: relative;
+    top:115px;
+    width:100%;
+    height: 1px;
+    border: 0.01px solid rgba(0, 0, 0, 0.623);
+    border-top: none;
+    border-radius: 50%;
+}
+#history{
+    text-align: right;
+    height:20px;
+    margin: 0 20px;
+    padding-top:20px ;
+    font-size: 20px;
+    color:#e0e0e0;
+}
+#output{
+    position: relative;
+    top:-20px;
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 45px;
+}
+#keyboard{
+    height: 400px;
+}
+.operator{
+    width: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #444343;
+    color:white;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 40%;
+    border:none;
+    font-size: 18px;
+}
+.number{
+    width: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    background:radial-gradient(circle,rgb(202, 201, 201),rgb(218, 218, 218));
+    font-weight:500;
+    color: #051937;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border:none;
+   
+ }
+.number:hover{
+    /* background:linear-gradient(to top,white,grey); */
+    
+     font-weight:bold;
+   
+}
+
+.number,.operator{
+    cursor:pointer;
+}
+
+.operator:active, .number:active{
+    font-size: 20px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+    
+}
+button:nth-child(4){
+    font-size: 24px;
+    background-color:crimson;
+}
+button:nth-child(8){
+    font-size: 24px;
+    background-color:darkorange;
+    
+}
+button:nth-child(12){
+    font-size: 24px;
+    background-color: #3ec56b;
+}
+button:nth-child(16){
+    font-size: 24px;
+    background-color: cornflowerblue;
+}
+button:nth-child(18){
+    font-size: 45px;
+    position:absolute;
+    left:80px;
+    top:82%;
+    border-radius: 35px 35px 35px 35px/ 35px 35px 35px 35px;
+    height: 55px;
+    width: 208px;
+    background-color:#e4224c;
+}
+
+button:nth-child(18):active{
+    background-color: #e72c55;
+    font-size: 35px;
+    /*  */
+   
+}
