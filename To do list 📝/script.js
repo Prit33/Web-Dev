@@ -33,41 +33,19 @@ addBtn.onclick=()=>{
 //     var letters=['000000','00FF00','C0C0C0','00FFFF'];
 //     col+=letters[Math.floor(Math.random()*letters).length];
 //     document.getElementById("change").style.background=col;
-//     alert("Page is loaded");
 // }
 
-//generate randomcolor for list
-function generateRandomColor()
-{
-    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-    return randomColor;
-    
-    //random color will be freshly served
-}
-//generate invert color for list items
-function invertColor(hex) {
-    if (hex.indexOf('#') === 0) {
-        hex = hex.slice(1);
-    }
-    // convert 3-digit hex to 6-digits.
-    if (hex.length === 3) {
-        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
-    }
-    if (hex.length !== 6) {
-        throw new Error('Invalid HEX color.');
-    }
-    // invert color components
-    var r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
-        g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
-        b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
-    // pad each with zeros and return
-    return '#' + padZero(r) + padZero(g) + padZero(b);
-}
 
-function padZero(str, len) {
-    len = len || 2;
-    var zeros = new Array(len).join('0');
-    return (zeros + str).slice(-len);
+function color(n){
+    const col=['#EE2F62','#5DADF6'];
+    if(n==1)
+    {
+        return col[0];
+    }
+    else
+    {
+        return col[1];
+    }
 }
 function showTasks(){
     let getLocalStorage =localStorage.getItem("New ToDo");  //getting localstorage
@@ -86,11 +64,11 @@ function showTasks(){
         deleteAllBtn.classList.remove("active");    //else remove active
     }
     let newLiTag= '';
-    
+    let n=1;
     listArr.forEach((element,index) => {
-        let m= generateRandomColor();
-        newLiTag += `<li style="background-color:${generateRandomColor()} ; color: ${invertColor(m)} ;">${element}<span onclick= "deleteTask(${index})"; ><i class="fas fa-check-circle"></i></span></li>`;
-        
+        var converted=element.toUpperCase();
+        newLiTag += `<li style="background-color:${color(parseInt(n))} ; color: #fff;">${converted}<span onclick= "deleteTask(${index})"; ><i class="fas fa-check-circle"></i></span></li>`;
+        n*=-1;
         
     });
     todoList.innerHTML= newLiTag;
