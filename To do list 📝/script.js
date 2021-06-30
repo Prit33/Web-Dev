@@ -28,16 +28,15 @@ addBtn.onclick=()=>{
     addBtn.classList.remove("active");  //if empty is trying to add, then remove active
 }
 
-// function change(){
-//     var col='#';
-//     var letters=['000000','00FF00','C0C0C0','00FFFF'];
-//     col+=letters[Math.floor(Math.random()*letters).length];
-//     document.getElementById("change").style.background=col;
-// }
+//dynamic color to the page
+function change(){
+    var c='#'+Math.floor(Math.random()*16777215).toString(16)
+    document.getElementById("changecol").style.background=c;
+}
 
-
+// 2 sets of color applied on list
 function color(n){
-    const col=['#EE2F62','#5DADF6'];
+    const col=['#EE2F62','#2189A7'];
     if(n==1)
     {
         return col[0];
