@@ -36,14 +36,25 @@ function change(){
 
 // 2 sets of color applied on list
 function color(n){
-    const col=['#EE2F62','#2189A7'];
+    const col=['#000000','#fff'];
+    const listcol=['#fff','#000000'];
     if(n==1)
     {
         return col[0];
     }
     else
+    if(n==-1)
     {
         return col[1];
+    }
+    else
+    if(m==-1)
+    {
+        return col[1];
+    }
+    else
+    {
+        return col[0];
     }
 }
 function showTasks(){
@@ -63,11 +74,13 @@ function showTasks(){
         deleteAllBtn.classList.remove("active");    //else remove active
     }
     let newLiTag= '';
-    let n=1;
+    let n=1,m=-1;
     listArr.forEach((element,index) => {
         var converted=element.toUpperCase();
-        newLiTag += `<li style="background-color:${color(parseInt(n))} ; color: #fff;">${converted}<span onclick= "deleteTask(${index})"; ><i class="fas fa-check-circle"></i></span></li>`;
+        newLiTag += `<li style="background-color:${color(parseInt(n))} ; color:${color(parseInt(m))};">${converted}<span onclick= "deleteTask(${index})"; ><i class="fas fa-check-circle"></i></span></li>`;
         n*=-1;
+        m*=-1;
+
         
     });
     todoList.innerHTML= newLiTag;
